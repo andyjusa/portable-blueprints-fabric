@@ -1,0 +1,129 @@
+//First write the block id, then the rotation and properties: [condition,result = list[name,value] ]
+
+{
+  "copycats:copycat_half_panel": [
+    {
+      //rot 90
+      "rotation": 1,
+      "properties": [
+        //down rotation
+        { "condition": "facing=down,offset=north", "result": [ { "name": "offset","value": "east" } ] },
+        { "condition": "facing=down,offset=east", "result": [ { "name": "offset","value": "south" } ] },
+        { "condition": "facing=down,offset=south", "result": [ { "name": "offset","value": "west" } ] },
+        { "condition": "facing=down,offset=west", "result": [ { "name": "offset","value": "north" } ] },
+
+        //up rotation
+        { "condition": "facing=up,offset=north", "result": [ { "name": "offset","value": "east" } ] },
+        { "condition": "facing=up,offset=east", "result": [ { "name": "offset","value": "south" } ] },
+        { "condition": "facing=up,offset=south", "result": [ { "name": "offset","value": "west" } ] },
+        { "condition": "facing=up,offset=west", "result": [ { "name": "offset","value": "north" } ] },
+
+        //side rotation up
+        { "condition": "facing=south,offset=south", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "west" } ] },
+        { "condition": "facing=west,offset=east", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "north" } ] },
+        { "condition": "facing=north,offset=south", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=east,offset=east", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "south" } ] },
+
+        //side rotation down
+        { "condition": "facing=south,offset=north", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "west" } ] },
+        { "condition": "facing=west,offset=west", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "north" } ] },
+        { "condition": "facing=north,offset=north", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=east,offset=west", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "south" } ] },
+
+        //side rotation right
+        { "condition": "facing=south,offset=west", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "west" } ] },
+        { "condition": "facing=west,offset=north", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "north" } ] },
+        { "condition": "facing=north,offset=east", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=east,offset=south", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "south" } ] },
+
+        //side rotation left
+        { "condition": "facing=south,offset=east", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "west" } ] },
+        { "condition": "facing=west,offset=south", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "north" } ] },
+        { "condition": "facing=north,offset=west", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=east,offset=north", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "south" } ] }
+      ]
+    },
+    {
+      //rot 180
+      "rotation": 2,
+      "properties": [
+        //down rotation
+        { "condition": "facing=down,offset=north", "result": [ { "name": "offset","value": "south" } ] },
+        { "condition": "facing=down,offset=east", "result": [ { "name": "offset","value": "west" } ] },
+        { "condition": "facing=down,offset=south", "result": [ { "name": "offset","value": "north" } ] },
+        { "condition": "facing=down,offset=west", "result": [ { "name": "offset","value": "east" } ] },
+
+        //up rotation
+        { "condition": "facing=up,offset=north", "result": [ { "name": "offset","value": "south" } ] },
+        { "condition": "facing=up,offset=east", "result": [ { "name": "offset","value": "west" } ] },
+        { "condition": "facing=up,offset=south", "result": [ { "name": "offset","value": "north" } ] },
+        { "condition": "facing=up,offset=west", "result": [ { "name": "offset","value": "east" } ] },
+
+        //side rotation up
+        { "condition": "facing=south,offset=south", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "north" } ] },
+        { "condition": "facing=west,offset=east", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=north,offset=south", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "south" } ] },
+        { "condition": "facing=east,offset=east", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "west" } ] },
+
+        //side rotation down
+        { "condition": "facing=south,offset=north", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "north" } ] },
+        { "condition": "facing=west,offset=west", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=north,offset=north", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "south" } ] },
+        { "condition": "facing=east,offset=west", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "west" } ] },
+
+        //side rotation right
+        { "condition": "facing=south,offset=west", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "north" } ] },
+        { "condition": "facing=west,offset=north", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=north,offset=east", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "south" } ] },
+        { "condition": "facing=east,offset=south", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "west" } ] },
+
+        //side rotation left
+        { "condition": "facing=south,offset=east", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "north" } ] },
+        { "condition": "facing=west,offset=south", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=north,offset=west", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "south" } ] },
+        { "condition": "facing=east,offset=north", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "west" } ] }
+      ]
+    },
+    {
+      //rot 270
+      "rotation": 3,
+      "properties": [
+        //down rotation
+        { "condition": "facing=down,offset=north", "result": [ { "name": "offset","value": "west" } ] },
+        { "condition": "facing=down,offset=east", "result": [ { "name": "offset","value": "north" } ] },
+        { "condition": "facing=down,offset=south", "result": [ { "name": "offset","value": "east" } ] },
+        { "condition": "facing=down,offset=west", "result": [ { "name": "offset","value": "south" } ] },
+
+        //up rotation
+        { "condition": "facing=up,offset=north", "result": [ { "name": "offset","value": "west" } ] },
+        { "condition": "facing=up,offset=east", "result": [ { "name": "offset","value": "north" } ] },
+        { "condition": "facing=up,offset=south", "result": [ { "name": "offset","value": "east" } ] },
+        { "condition": "facing=up,offset=west", "result": [ { "name": "offset","value": "south" } ] },
+
+        //side rotation up
+        { "condition": "facing=south,offset=south", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=west,offset=east", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "south" } ] },
+        { "condition": "facing=north,offset=south", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "west" } ] },
+        { "condition": "facing=east,offset=east", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "north" } ] },
+
+        //side rotation down
+        { "condition": "facing=south,offset=north", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=west,offset=west", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "south" } ] },
+        { "condition": "facing=north,offset=north", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "west" } ] },
+        { "condition": "facing=east,offset=west", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "north" } ] },
+
+        //side rotation right
+        { "condition": "facing=south,offset=west", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=west,offset=north", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "south" } ] },
+        { "condition": "facing=north,offset=east", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "west" } ] },
+        { "condition": "facing=east,offset=south", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "north" } ] },
+
+        //side rotation left
+        { "condition": "facing=south,offset=east", "result": [ { "name": "offset","value": "north" }, { "name": "facing","value": "east" } ] },
+        { "condition": "facing=west,offset=south", "result": [ { "name": "offset","value": "east" }, { "name": "facing","value": "south" } ] },
+        { "condition": "facing=north,offset=west", "result": [ { "name": "offset","value": "south" }, { "name": "facing","value": "west" } ] },
+        { "condition": "facing=east,offset=north", "result": [ { "name": "offset","value": "west" }, { "name": "facing","value": "north" } ] }
+      ]
+    }
+  ]
+}

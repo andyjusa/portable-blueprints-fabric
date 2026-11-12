@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:recipes/root",
+  "show_notification": true,
+  "criteria": {
+    "always_unlock": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "portable_blueprints:crafting_table/scanner",
+      "portable_blueprints:crafting_table/tablet"
+    ]
+  }
+}

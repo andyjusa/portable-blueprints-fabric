@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "portable_blueprints",
+  "version": "${version}",
+  "name": "Portable Blueprints (Fabric Port)",
+  "description": "Unofficial Fabric port of Portable Blueprints by Nimblonia.",
+  "authors": [
+    "Nimblonia (original mod)",
+    "Fabric port contributors"
+  ],
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "nimble.portable_blueprints.fabric.PortableBlueprints"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "nimble.portable_blueprints.fabric.PortableBlueprintsClient"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.116.7+1.21.1",
+    "fabric-language-kotlin": ">=1.14.2+kotlin.2.4.21"
+  },
+  "mixins": [
+    {
+      "config": "portable_blueprints.client.mixins.json",
+      "environment": "client"
+    }
+  ]
+}

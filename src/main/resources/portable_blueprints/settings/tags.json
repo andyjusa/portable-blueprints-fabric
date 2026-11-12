@@ -1,0 +1,74 @@
+[
+    {
+        "tag_name": {
+            "en_us": "Medieval",
+            "it_it": "Medievale"
+        }
+    },
+    {
+        "tag_name": {
+            "en_us": "Modern",
+            "it_it": "Moderno"
+        }
+    },
+    {
+        "tag_name": {
+            "en_us": "Nature & Trees",
+            "it_it": "Natura e Alberi"
+        }
+    },
+    {
+        "tag_name": {
+            "en_us": "Infrastructure",
+            "it_it": "Infrastrutture"
+        }
+    },
+    {
+        "tag_name": {
+            "en_us": "Houses",
+            "it_it": "Case"
+        }
+    },
+    {
+        "tag_name": {
+            "en_us": "Fortifications",
+            "it_it": "Fortificazioni"
+        }
+    },
+    {
+        "tag_name": {
+            "en_us": "Redstone & Tech",
+            "it_it": "Redstone e Tecnologia"
+        }
+    },
+    {
+        "tag_name": {
+            "en_us": "Decoration",
+            "it_it": "Decorazione"
+        }
+    },
+    {
+        "tag_name": {
+            "en_us": "Agriculture",
+            "it_it": "Agricoltura"
+        }
+    },
+    {
+        "tag_name": {
+            "en_us": "Interior",
+            "it_it": "Interni"
+        }
+    },
+    {
+        "tag_name": {
+            "en_us": "Underground",
+            "it_it": "Sotterraneo"
+        }
+    },
+    {
+        "tag_name": {
+            "en_us": "Statues & Art",
+            "it_it": "Statue e Arte"
+        }
+    }
+]

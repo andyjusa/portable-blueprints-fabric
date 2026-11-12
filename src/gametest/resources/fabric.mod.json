@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "portable_blueprints_test",
+  "version": "1.0.0",
+  "name": "Portable Blueprints Development Tests",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-gametest": [
+      "nimble.portable_blueprints.test.NetworkGameTests",
+      {
+        "adapter": "kotlin",
+        "value": "nimble.portable_blueprints.test.BlueprintGameTests"
+      },
+      "nimble.portable_blueprints.test.BlueprintJsonGameTests"
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "nimble.portable_blueprints.test.ClientSmoke"
+      }
+    ]
+  },
+  "depends": {
+    "portable_blueprints": "*",
+    "fabric-language-kotlin": "*"
+  }
+}
